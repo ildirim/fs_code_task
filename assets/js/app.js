@@ -1,6 +1,6 @@
 $(document).on('change', '#plugin-list', function(){
 	let ths = $(this);
-    let url = '/fs/index.php/index/getForm';
+    let url = '/fs_code_task/index.php/index/getForm';
     $.ajax({
         url: url,
         type: 'POST',
@@ -20,7 +20,7 @@ $(document).on('change', '#plugin-list', function(){
 $(document).on('submit', 'form', function(e){
     e.preventDefault();
     let ths = $(this);
-    let url = '/fs/index.php/index/send';
+    let url = '/fs_code_task/index.php/index/send';
     $.ajax({
         url: url,
         type: 'POST',
